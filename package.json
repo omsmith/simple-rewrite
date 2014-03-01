@@ -1,0 +1,32 @@
+{
+  "name": "simple-rewrite",
+  "version": "0.0.1",
+  "description": "A simple request url rewriter as a minimal wrapper around String.prototype.replace",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/istanbul test ./node_modules/.bin/_mocha -- -R spec spec",
+    "report-cov": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:omsmith/simple-rewrite.git"
+  },
+  "keywords": [
+    "simple",
+    "rewrite",
+    "handler",
+    "http"
+  ],
+  "author": "Owen Smith <owen@omsmith.ca>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/omsmith/simple-rewrite/issues"
+  },
+  "homepage": "https://github.com/omsmith/simple-rewrite",
+  "devDependencies": {
+    "mocha": "^1.17.1",
+    "coveralls": "^2.8.0",
+    "istanbul": "^0.2.4",
+    "supertest": "^0.9.0"
+  }
+}
